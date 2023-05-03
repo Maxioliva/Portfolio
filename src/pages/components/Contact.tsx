@@ -5,7 +5,15 @@ export default function Contact() {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  function encode(data) {
+  interface FormData {
+    [key: string]: string;
+    "form-name": string;
+    name: string;
+    email: string;
+    message: string;
+  }
+
+  function encode(data: FormData) {
     return Object.keys(data)
       .map(
         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
@@ -13,7 +21,7 @@ export default function Contact() {
       .join("&");
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
     fetch("/", {
       method: "POST",
