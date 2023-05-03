@@ -4,21 +4,21 @@ export const projects = [
     subtitle: "React js - Typescript",
     description:
       "Responsive React SPA, search and display Rick and Morty data.",
-    image: "rickandmorty.png",
+    image: "/rickandmorty.png",
     link: "https://rickandmorty-c137.netlify.app/",
   },
   {
     title: "Movies",
     subtitle: "React js",
     description: "Responsive React SPA, search and display Movies data.",
-    image: "movies.png",
+    image: "/movies.png",
     link: "https://nicemovies.netlify.app/",
   },
   {
     title: "Ecommerce",
     subtitle: "React js - Typescript - REST - Firebase",
     description: "Fullstack single-page, responsive, ecommerce application .",
-    image: "ecommerce.png",
+    image: "/ecommerce.png",
     link: "https://elchamuyin.netlify.app/",
   },
 ];
